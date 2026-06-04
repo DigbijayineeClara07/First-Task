@@ -15,4 +15,8 @@ resource "google_storage_bucket" "this" {
       age = var.lifecycle_rule_condition_age
     }
   }
+
+  lifecycle {
+    ignore_changes = [terraform_labels]
+  }
 }
