@@ -1,6 +1,6 @@
 # Root module — wires module calls only; no bare resource blocks.
 module "athena_workgroup" {
-  source   = "./modules/athena_workgroup"
+  source   = "./modules/athena_workgrou"
   for_each = var.athena_workgroups
 
   name                               = each.value.name
